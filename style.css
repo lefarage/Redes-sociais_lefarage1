@@ -14,9 +14,13 @@
         margin: 0;
         
     }
-
     header{
         background-color: var(--primary-color);
         text-align: center;
-        
+    }
+
+    h1{
+        font-size: 2rem;
+        color: var(--bg-color);
+        font-weight: 700;
     }
