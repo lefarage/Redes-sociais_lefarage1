@@ -3,5 +3,10 @@
     --bg-color: #32012F;
     --primary-color: #E2DFD0;
     --secondary-color: #F97300;
-    
-}
+    --font: "Nunito", system-ui;
+    }
+
+    body{
+        background-color: var(--bg-color);
+        
+    }
