@@ -42,3 +42,12 @@
         transform: scale(0.9);
         transition: transform 0.1s;
     }
+
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--primary-color);
+        color: var(--bg-color);
+
+    }
