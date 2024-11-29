@@ -3,10 +3,12 @@ const url = 'https://raw.githubusercontent.com/guilhermeonrails/api/main/dados-g
 async function vizualizarInformacoesGlobais() {
     const res = await fetch(url)
     const dados = await res.json()
-    Const pessoasConectas = (dados.total_pessoas_conectadas / 1e9)
-    Const pessoasNoMundo = (dados.total_pessoas_mundo / 1e9)
-    Const horas = parseInt(dados.tempo_medio)
-    Const minutos = Math.round(dados.tempo_medio -  horas) * 100
+    const pessoasConectadas = (dados.total_pessoas_conectadas / 1e9)
+    const pessoasNoMundo = (dados.total_pessoas_mundo / 1e9)
+    const horas = parseInt(dados.tempo_medio)
+    const minutos = Math.round((dados.tempo_medio - horas) * 100)
+    const porcentagemConectada = ((pessoasConectadas / pessoasNoMundo ) * 100).toFixed(2)
+
     
     const paragrafo = document.createElement('p')
     paragrafo.classList.add('graficos-container__texto')
